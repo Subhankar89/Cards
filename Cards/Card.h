@@ -1,0 +1,28 @@
+//
+//  Card.h
+//  Cards
+//
+//  Created by Subhankar Acharya on 11/03/20.
+//  Copyright © 2020 Subhankar Acharya. All rights reserved.
+//
+
+//public implementation of class -> single inhertance -> no multiple inheritance -> use protocol for conformance
+
+#import <Foundation/Foundation.h>
+
+@interface Card : NSObject
+
+//Mark:- DESCRIPTION
+/*
+ 1. this property represents two menthods, a setter and a getter, it goes behind the scene, its getting a pointer to NSString object.
+ 2. ALL OBJECTS IN OBJECTIVE C LIVE IN THE HEAP.
+ 3. contents is an pointer to NSString object.
+ 4. setter of a property which is a pointer to an object. We are setting or getting the pointer. So the way this contents thing would point to a string is, someone would call the setter for this thing and set it to as some pointer to a string.
+ 5. nonatomic means this property is not thread safe.
+ 6. 
+ */
+@property (strong, nonatomic) NSString *contents; 
+
+@end
+
+
