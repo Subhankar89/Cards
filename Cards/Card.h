@@ -19,9 +19,11 @@
  3. contents is an pointer to NSString object.
  4. setter of a property which is a pointer to an object. We are setting or getting the pointer. So the way this contents thing would point to a string is, someone would call the setter for this thing and set it to as some pointer to a string.
  5. nonatomic means this property is not thread safe.
- 6. 
+ 6. by default its atomic
  */
-@property (strong, nonatomic) NSString *contents; 
+@property (strong, nonatomic) NSString *contents;
+@property (nonatomic) BOOL faceUP;    //BOOL is a primitive and we stil don't want the locking, that's why nonatomic.
+@property (nonatomic) BOOL unPlayable;
 
 @end
 
