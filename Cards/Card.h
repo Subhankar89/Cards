@@ -24,14 +24,8 @@
 @property (strong, nonatomic) NSString *contents;
 @property (nonatomic, getter=isFaceUp) BOOL faceUP;    //BOOL is a primitive and we stil don't want the locking, that's why nonatomic. isFaceUp improves readability.
 @property (nonatomic, getter=isUnPlayable) BOOL unPlayable;
-/*
- Regular objective C method.
- 1. it's public as it's in header file.
- 2. retuns Int
- 3. takes pointer to another Card as an argument
- 4. semantics are it compares itelf to that card and returns 0, if it doesn't match that card and returns some number, that represent how good a match it is otherwise.
- */
--(int)match:(Card *)card;
+
+- (int)match:(NSArray *)otherCards; // array of Cards
 @end
 
 

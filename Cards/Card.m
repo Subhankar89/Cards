@@ -21,11 +21,12 @@
  One is on the card that is passed as an argument and the other getter is called on myself(CARD). Both of these getters are going to return pointers to String.
  So we have 2 strings. Now we are using isEqualToString method to compare them.
  */
--(int)match:(Card *)card{
+-(int)match:(NSArray *)otherCards {
     int score = 0;
-    
-    if ([card.contents isEqualToString:self.contents]) {
-        score = 1;
+    for (Card *card in otherCards){
+        if ([card.contents isEqualToString:self.contents]) {
+            score = 1;
+        }
     }
     return score;
 }
