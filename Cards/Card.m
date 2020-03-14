@@ -19,14 +19,14 @@
 @synthesize faceUP = _faceUP;
 @synthesize unPlayable = _unPlayable;
 
--(BOOL)faceUP{
+-(BOOL)isFaceUP{
     return _faceUP;
 }
 -(void) setFaceUP:(BOOL)faceUP{
     _faceUP = faceUP;
 }
 
--(BOOL)unPlaybale{
+-(BOOL)isunPlaybale{
     return _unPlayable;
 }
 -(void)setUnPlayable:(BOOL)unPlayable

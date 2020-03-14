@@ -22,8 +22,8 @@
  6. by default its atomic
  */
 @property (strong, nonatomic) NSString *contents;
-@property (nonatomic) BOOL faceUP;    //BOOL is a primitive and we stil don't want the locking, that's why nonatomic.
-@property (nonatomic) BOOL unPlayable;
+@property (nonatomic, getter=isFaceUp) BOOL faceUP;    //BOOL is a primitive and we stil don't want the locking, that's why nonatomic. isFaceUp improves readability.
+@property (nonatomic, getter=isUnPlayable) BOOL unPlayable;
 
 @end
 
