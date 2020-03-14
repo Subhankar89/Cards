@@ -16,22 +16,17 @@
 
 @implementation Card
 
-@synthesize faceUP = _faceUP;
-@synthesize unPlayable = _unPlayable;
-
--(BOOL)isFaceUP{
-    return _faceUP;
+/*
+ We are calling a getter (contents) for the first time.
+ One is on the card that is passed as an argument and the other getter is called on myself(CARD). Both of these getters are going to return pointers to String.
+ So we have 2 strings. Now we are using isEqualToString method to compare them.
+ */
+-(int)match:(Card *)card{
+    int score = 0;
+    
+    if ([card.contents isEqualToString:self.contents]) {
+        score = 1;
+    }
+    return score;
 }
--(void) setFaceUP:(BOOL)faceUP{
-    _faceUP = faceUP;
-}
-
--(BOOL)isunPlaybale{
-    return _unPlayable;
-}
--(void)setUnPlayable:(BOOL)unPlayable
-{
-    _unPlayable = unPlayable;
-}
-
 @end
