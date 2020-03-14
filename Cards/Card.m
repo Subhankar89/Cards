@@ -16,23 +16,22 @@
 
 @implementation Card
 
-/*
- Here is what the compiler is generating behind the scenes, not in our code, when we do a @property. There is three parts to it:
- 1. synthesize
- 2. getter
- 3. setter
- */
+@synthesize faceUP = _faceUP;
+@synthesize unPlayable = _unPlayable;
 
-@synthesize contents = _contents;  //this is saying, the property name contents is using an instance variable _contents.
-
--(NSString *)contents  //getter
-{
-    return _contents; // _contents is an instance variable
+-(BOOL)faceUP{
+    return _faceUP;
+}
+-(void) setFaceUP:(BOOL)faceUP{
+    _faceUP = faceUP;
 }
 
--(void)setContents:(NSString *)contents  //setter
+-(BOOL)unPlaybale{
+    return _unPlayable;
+}
+-(void)setUnPlayable:(BOOL)unPlayable
 {
-    _contents = contents;
+    _unPlayable = unPlayable;
 }
 
 @end
