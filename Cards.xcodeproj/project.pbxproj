@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		326771AB2421E417001E0AEE /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 326771AA2421E417001E0AEE /* Deck.m */; };
 		32D284FD2418AFFB000AAE41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D284FC2418AFFB000AAE41 /* AppDelegate.m */; };
 		32D285002418AFFB000AAE41 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D284FF2418AFFB000AAE41 /* SceneDelegate.m */; };
 		32D285062418AFFB000AAE41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D285042418AFFB000AAE41 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		326771AA2421E417001E0AEE /* Deck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		326771AC2421E428001E0AEE /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		32D284F82418AFFB000AAE41 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D284FB2418AFFB000AAE41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32D284FC2418AFFB000AAE41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				32D285092418AFFC000AAE41 /* LaunchScreen.storyboard */,
 				32D2850C2418AFFC000AAE41 /* Info.plist */,
 				32D2850D2418AFFC000AAE41 /* main.m */,
+				326771AA2421E417001E0AEE /* Deck.m */,
+				326771AC2421E428001E0AEE /* Deck.h */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326771AB2421E417001E0AEE /* Deck.m in Sources */,
 				32D285152418B693000AAE41 /* Card.m in Sources */,
 				32D284FD2418AFFB000AAE41 /* AppDelegate.m in Sources */,
 				32D2850E2418AFFC000AAE41 /* main.m in Sources */,
