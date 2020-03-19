@@ -32,8 +32,18 @@
     }
 }
 
+//local variables start out as zero in Objective-C
+
 -(Card *)drawRandomCard
 {
+    Card *randowmCard = nil; // it essentially means 0.
+    
+    if (self.cards.count){
+        unsigned index = arc4random() % self.cards.count;
+        randowmCard = self.cards[index];
+        [self.cards removeObjectAtIndex:index];
+    }
+    return randowmCard;
 }
 
 @end
