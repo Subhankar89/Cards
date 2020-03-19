@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32106F2324232DA500D14159 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 32106F2224232DA500D14159 /* PlayingCard.m */; };
 		326771AB2421E417001E0AEE /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 326771AA2421E417001E0AEE /* Deck.m */; };
 		32D284FD2418AFFB000AAE41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D284FC2418AFFB000AAE41 /* AppDelegate.m */; };
 		32D285002418AFFB000AAE41 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D284FF2418AFFB000AAE41 /* SceneDelegate.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32106F2224232DA500D14159 /* PlayingCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		32106F2424232DB600D14159 /* PlayingCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
 		326771AA2421E417001E0AEE /* Deck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		326771AC2421E428001E0AEE /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		32D284F82418AFFB000AAE41 /* Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cards.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +80,8 @@
 				32D2850D2418AFFC000AAE41 /* main.m */,
 				326771AA2421E417001E0AEE /* Deck.m */,
 				326771AC2421E428001E0AEE /* Deck.h */,
+				32106F2224232DA500D14159 /* PlayingCard.m */,
+				32106F2424232DB600D14159 /* PlayingCard.h */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32106F2324232DA500D14159 /* PlayingCard.m in Sources */,
 				326771AB2421E417001E0AEE /* Deck.m in Sources */,
 				32D285152418B693000AAE41 /* Card.m in Sources */,
 				32D284FD2418AFFB000AAE41 /* AppDelegate.m in Sources */,
