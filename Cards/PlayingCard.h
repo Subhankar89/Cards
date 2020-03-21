@@ -14,6 +14,6 @@
 @property (nonatomic, strong) NSString *suit;
 @property (nonatomic) NSUInteger rank; //typedefed unsigned int
 +(NSArray *)validSuits;
-
++(NSUInteger)maxRank;
 
 @end
